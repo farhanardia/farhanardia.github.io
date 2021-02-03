@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Kul Kul │ Home</title>
+  <title>Kul Kul │ 404 Error!</title>
   <link rel="icon" href="https://cdn.discordapp.com/attachments/794187409352687636/806432746750083072/favicon_FC7_icon.ico"/>
 </head>
 <style>
@@ -10,7 +10,7 @@
 }
   ul {
     list-style-type: none;
-    margin: 0;
+    margin-right: 20px;
     padding: 0;
     overflow: hidden;
   }
@@ -41,12 +41,18 @@
     text-align: center;
     color: white;
     font-family: yey;
+    line-height: 40px;
   }
-  div {
+  .navi {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+  }
+  .error {
     font-family: yeyb;
     font-size: 150px;
     letter-spacing: 10px;
-    line-height: 90%;
   }
   @font-face {
     font-family: "yey";
@@ -62,14 +68,16 @@
   }
 </style>
 <body>
+  <div style="clear:both;" class="navi">
   <a href="index.html"><img src="https://i.imgur.com/noXauyT.png" alt="logo" style="width:10%;"></a>
   <ul>
-    <li><a href="404">Our Location</a></li>
-    <li><a href="404">Our Products</a></li>
-    <li><a href="404">About Us</a></li>
-    <li><a href="404">Company Profile</a></li>
+    <li><a href="location.html">Our Location</a></li>
+    <li><a href="404.html">Our Products</a></li>
+    <li><a href="404.html">About Us</a></li>
+    <li><a href="404.html">Company Profile</a></li>
     <li><a class="back" href="index.html">Back</a></li>
   </ul>
+</div>
   <br>
   <br>
   <br>
@@ -80,4 +88,11 @@
   <br>
   <br>
   <br>
-  <h1> Error <div>404</div>Oh no! You just visited our page that's currently under development. Please check our website regularly.</h1>
+  <h1> Error
+    <br>
+    <br>
+    <div class="error">404</div>
+    <br>
+    Oh no! You just visited our page that's currently under development. Please check our website regularly.</h1>
+  </body>
+  </html>
