@@ -63,3 +63,6 @@ h1 {
   font-family: "sugare";
   src: url("SUGARE.ttf");
 }
+@media only screen and (max-width: 1080px) {
+  ul {width: 40%; float: right;}
+}
