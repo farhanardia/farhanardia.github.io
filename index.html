@@ -8,10 +8,18 @@
  body::-webkit-scrollbar {
    display: none;
  }
+ html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+ }
  body {
    -ms-overflow-style: none;
    scrollbar-width: none;
-   background-image: url("https://i.imgur.com/2HpvGjb.png")
+   background-image: url("https://i.imgur.com/2HpvGjb.png");
+   min-height:100%;
+   position:relative;
+   padding-bottom:175px;
  }
  h1 {
    text-align: center;
@@ -22,8 +30,20 @@
    top: 50%;
    left: 0;
    right: 0;
-   margin-top: -9px;
+   margin-top: -100px;
  }
+ footer {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-family: Louis;
+  height:165px;
+  background:#a3a3a3;
+}
+footer a {
+  color: white;
+}
  .navi {
    position: -webkit-sticky;
    position: sticky;
@@ -55,6 +75,22 @@
  .navi img {
    float: left;
  }
+ .left-part {
+   position: absolute;
+   left: 1%;
+   top: 20px;
+ }
+ .map {
+   position: absolute;
+   left: 80%;
+   top: 20px;
+ }
+ .right-part {
+   position: absolute;
+   left: 75%;
+   top: 50px;
+   text-align: right;
+ }
  @font-face {
    font-family: "Louis";
    src: url("Louis George Cafe.ttf");
@@ -72,12 +108,20 @@
   <div style="clear:both;" class="navi">
   <a href="index"><img src="https://i.imgur.com/noXauyT.png" alt="logo" style="width:125px;"></a>
   <ul>
-    <li><a href="location">Our Location</a></li>
-    <li><a href="404">Our Products</a></li>
-    <li><a href="404">About Us</a></li>
-    <li><a href="company">Company Profile</a></li>
+    <li><a href="location.en">Our Location</a></li>
+    <li><a href="products.en">Our Products</a></li>
+    <li><a href="about.en">About Us</a></li>
+    <li><a href="company.en">Company Profile</a></li>
   </ul>
   </div>
   <h1>Currently this website is still under development. Please check our website regularly.</h1>
+  <footer>
+    <div class="left-part"><img src="https://i.imgur.com/bwfrpwi.png" width="290px">
+      <br>2021. This project is created solely for a school assignment.</div>
+      <img class="map" src="https://i.imgur.com/tXOR9Iz.png" width="250px">
+    <div class="right-part">Kul Kul is also available in these languages
+    <br><a href="index">English
+      <br><a href="index.id">Bahasa Indonesia</div>
+  </footer>
 </body>
 </html>
